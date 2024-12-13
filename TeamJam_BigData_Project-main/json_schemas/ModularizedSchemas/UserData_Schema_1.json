@@ -1,0 +1,32 @@
+{
+  "title": "UserRecordings",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "description": "The unique identifier for the user"
+    },
+    "recordings": {
+      "type": "array",
+      "description": "List of user recordings",
+      "items": {
+        "type": "object",
+        "properties": {
+          "recording_id": {
+            "type": "string",
+            "description": "The unique identifier for the recording"
+          },
+          "date": {
+            "type": "string",
+            "description": "The date of the recording"
+          }
+        },
+        "required": ["recording_id", "date"]
+      }
+    }
+  },
+  "required": ["_id", "recordings"]
+}
+
+
+
